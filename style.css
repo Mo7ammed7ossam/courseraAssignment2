@@ -1,0 +1,122 @@
+body>h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: cursive;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.first {
+    border: 2px solid black;
+    background-color: gainsboro;
+}
+
+.first .title {
+    text-align: right;
+}
+
+.first .title span {
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0 40px;
+    display: inline-block;
+    background-color: burlywood;
+}
+
+.first .topic {
+    padding: 0 10px 10px;
+    font-size: 16px;
+}
+
+.second {
+    border: 2px solid black;
+    background-color: gainsboro;
+}
+
+.second .title {
+    text-align: right;
+}
+
+.second .title span {
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0 40px;
+    display: inline-block;
+    background-color: darkred;
+    color: white;
+}
+
+.second .topic {
+    padding: 0 10px 10px;
+    font-size: 16px;
+}
+
+.third {
+    border: 2px solid black;
+    background-color: gainsboro;
+}
+
+.third .title {
+    text-align: right;
+}
+
+.third .title span {
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0 40px;
+    display: inline-block;
+    background-color: pink;
+}
+
+.third .topic {
+    padding: 0 10px 10px;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 992px) {
+    .layer-first,
+    .layer-second,
+    .layer-third {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .layer-first,
+    .layer-second {
+        width: 46%;
+    }
+    .layer-third {
+        width: 96%;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .layer-first,
+    .layer-second,
+    .layer-third {
+        width: 96%;
+    }
+    .layer-second,
+    .layer-third {
+        margin-top: 30px;
+    }
+}
